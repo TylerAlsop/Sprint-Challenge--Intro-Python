@@ -10,9 +10,9 @@ class GroundVehicle():
     def drive(self):
         return "vroooom"
 
-four_wheeler = GroundVehicle()
-print(four_wheeler.num_wheels)
-print(four_wheeler.drive())
+# four_wheeler = GroundVehicle()
+# print(four_wheeler.num_wheels)
+# print(four_wheeler.drive())
 
     # TODO
 
@@ -24,17 +24,17 @@ print(four_wheeler.drive())
 # Override the drive() method in Motorcycle so that it returns "BRAAAP!!"
 
 class Motorcycle(GroundVehicle):
-    def __init__(self, num_wheels):
+    def __init__(self):
         super().__init__(num_wheels = 2) 
     
     def drive(self):
         return "BRAAAP!!"
 
 
-honda = Motorcycle(None)
+# honda = Motorcycle(None)
 
-print(honda.num_wheels)
-print(honda.drive())
+# print(honda.num_wheels)
+# print(honda.drive())
 
 
 # TODO
@@ -42,9 +42,9 @@ print(honda.drive())
 vehicles = [
     GroundVehicle(),
     GroundVehicle(),
-    Motorcycle(None),
+    Motorcycle(),
     GroundVehicle(),
-    Motorcycle(None),
+    Motorcycle(),
 ]
 
 # Go through the vehicles list and print the result of calling drive() on each.
