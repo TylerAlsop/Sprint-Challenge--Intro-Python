@@ -38,8 +38,7 @@ def cityreader(cities=[]):
     file_reader = csv.reader(cities_file)
 
     for line in file_reader:
-      # each_line = line[i]
-      if line[1:]:
+      if line[0] != 'city':
         added_city = City(line[0], float(line[3]), float(line[4]))
         cities.append(added_city)
 
